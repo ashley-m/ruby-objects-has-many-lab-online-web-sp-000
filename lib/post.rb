@@ -11,7 +11,12 @@ class Post
     @@all
   end
 
+  def author?
+    self.author.is_a?(Author)
+  end
+
   def author_name
     @author.name
+    if 
   end
 end
