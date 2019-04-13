@@ -16,6 +16,10 @@ class Post
   end
 
   def author_name
-    @author.name
+    if !author?
+      return nil
+    else
+      @author.name
+    end
   end
 end
