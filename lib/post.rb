@@ -4,7 +4,7 @@ class Post
   @@all = []
   def initialize(name)
     @title = name
-    @@all << name
+    @@all << self
   end
 
 end
