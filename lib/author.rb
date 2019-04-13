@@ -14,7 +14,7 @@ class Author
     post.author = self
     @@all_posts << post
   end
-  
+
   def add_post_by_title(title)
     p = Post.new(title)
     @posts << p
@@ -25,5 +25,5 @@ class Author
   def self.post_count
     @@all_posts.length
   end
-    
+
 end
