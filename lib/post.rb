@@ -12,7 +12,7 @@ class Post
   end
 
   def author_name
-    @author if @author.is_a?(Author)
+    @author if !@author.is_a?(Author)
     @author.name
   end
 end
